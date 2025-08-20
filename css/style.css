@@ -162,7 +162,38 @@ body.index-page {
     background-color: #704519;
 }
 
-#level-select img {
-    width: 100%;
-    height: auto;
+#level-select {
+  position: relative; 
+  display: inline-block;
+}
+
+#levels-img {
+  display: block;
+  max-width: 100%;   
+  height: auto;
+}
+
+.level-btn {
+  position: absolute; 
+  width: 210px;
+  height: 70px;
+  border-radius: 50%;  
+  border: 2px solid #00000000;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+#ferry-btn {
+  top: 20%;    
+  left: 35%;
+}
+
+#bus-btn {
+  top: 46%;
+  left: 35%;
+}
+
+#train-btn {
+  top: 71%;
+  left: 35%;
 }
