@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Game - Train Station</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-screen">
+
+    <div id="background">
+      <img src="assets/trainstationbg.png" alt="Train Station Background">
+    </div>
+
+    <img src="assets/character1.png" alt="Main Character" id="main-character">
+
+    <button class="task-icon" id="task1" onclick="location.href='scenario1.html'">!</button>
+    <button class="task-icon" id="task2" onclick="location.href='traininterior.html'">!</button>
+
+    <div id="instruction-popup" class="hidden">
+      <button class="exit" onclick="location.href='scenario1.html'">X</button>
+      <p id="instruction-text">Welcome to the train station!</p>
+      <p id="instruction-scroll">Scroll to move through the train station and find tasks</p>
+    </div>
+ 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

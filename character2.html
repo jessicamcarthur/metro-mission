@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Character</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="character-page">
+
+        <h1>Choose Your Character</h1>
+
+        <div id="character-display">
+            <button class="arrow left" id="prev-character" onclick="location.href='character1.html'">&#9664;</button>
+
+            <img src="assets/character2.png" alt="Character 2" id="main-character"> 
+
+            <button class="arrow right" id="next-character" onclick="location.href='character3.html'">&#9654;</button>
+        </div>
+
+        <div id="character-thumbnails">
+            <img src="assets/character1.png" alt="Character 1">
+            <img src="assets/character2grey.png" alt="Character 2">
+            <img src="assets/character3grey.png" alt="Character 3">
+        </div>
+
+        <div id="select-container">
+            <button id="select-btn">Select</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
