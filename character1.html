@@ -15,17 +15,35 @@
         <h1>Choose Your Character</h1>
 
         <div id="character-display">
-            <button class="arrow left" id="prev-character">&#9664;</button>
+            <button id="prev-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M13.54 18a2.06 2.06 0 0 1-1.3-.46l-5.1-4.21a1.7 1.7 0 0 1 0-2.66l5.1-4.21a2.1 2.1 0 0 1 2.21-.26a1.76 1.76 0 0 1 1.05 1.59v8.42a1.76 1.76 0 0 1-1.05 1.59a2.2 2.2 0 0 1-.91.2"
+                        stroke-width="1" stroke="currentColor" />
+                </svg>
+            </button>
 
-            <img src="character1.png" alt="Character 1" id="main-character">
+            <img src="assets/character1.png" alt="Character 1" id="main-character">
 
-            <button class="arrow right" id="next-character" onclick="location.href='character2.html'">&#9654;</button>
+            <button id="next-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M10.46 18a2.2 2.2 0 0 1-.91-.2a1.76 1.76 0 0 1-1.05-1.59V7.79A1.76 1.76 0 0 1 9.55 6.2a2.1 2.1 0 0 1 2.21.26l5.1 4.21a1.7 1.7 0 0 1 0 2.66l-5.1 4.21a2.06 2.06 0 0 1-1.3.46"
+                        stroke-width="1" stroke="currentColor" />
+                </svg>
+            </button>
         </div>
 
         <div id="character-thumbnails">
-            <img src="assets/character4grey.png" alt="Character 4">
-            <img src="assets/character1.png" alt="Character 1">
-            <img src="assets/character2grey.png" alt="Character 2">
+            <div class="thumbnail character-4">
+                <img src="assets/character4thumbnail.png" alt="Character 4">
+            </div>
+            <div class="thumbnail character-1">
+                <img src="assets/character1thumbnail.png" alt="Character 1">
+            </div>
+            <div class="thumbnail character-2">
+                <img src="assets/character2thumbnail.png" alt="Character 2">
+            </div>
         </div>
 
         <div id="select-container">
