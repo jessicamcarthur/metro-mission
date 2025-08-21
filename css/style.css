@@ -72,8 +72,8 @@ body.index-page {
 }
 
 #main-character {
-    width: 150px;
-    height: auto;
+  max-width: 30%;
+  height: auto;
 }
 
 #select-container {
@@ -285,7 +285,7 @@ body.index-page {
   z-index: 0; 
 }
 
-#main-character {
+#interior-character {
   position: absolute;
   bottom: 0px;   
   left: 19%;        
