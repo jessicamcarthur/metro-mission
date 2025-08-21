@@ -284,3 +284,12 @@ body.index-page {
   position: absolute; 
   z-index: 0; 
 }
+
+#main-character {
+  position: absolute;
+  bottom: 0px;   
+  left: 19%;        
+  width: 120px;    
+  transform: scaleX(-1);
+  z-index: 1; 
+}
