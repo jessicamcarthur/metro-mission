@@ -6,7 +6,8 @@ html {
     font-family: "gotham-narrow", sans-serif;
     font-weight: 400;
     font-style: normal;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden; 
 }
 
 body.index-page {
@@ -95,24 +96,26 @@ body.index-page {
     transition: all 0.3s ease;
 }
 
-#prev-btn, #next-btn {
-    background: none; 
-    border: none;         
-    cursor: pointer;    
-    padding: 10px;        
-    position: absolute;     
-    top: 50%;             
+#prev-btn,
+#next-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
     transition: transform 0.2s ease;
     color: #fff;
 }
 
-#prev-btn:hover, #next-btn:hover {
+#prev-btn:hover,
+#next-btn:hover {
     transform: translateY(-50%) scale(1.2);
 }
 
 #prev-btn {
-    left: -10px;           
+    left: -10px;
 }
 
 #next-btn {
@@ -163,37 +166,96 @@ body.index-page {
 }
 
 #level-select {
-  position: relative; 
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 #levels-img {
-  display: block;
-  max-width: 100%;   
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .level-btn {
-  position: absolute; 
-  width: 210px;
-  height: 70px;
-  border-radius: 50%;  
-  border: 2px solid #00000000;
-  background: rgba(255, 255, 255, 0);
-  cursor: pointer;
+    position: absolute;
+    width: 210px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #00000000;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
 }
 
 #ferry-btn {
-  top: 20%;    
-  left: 35%;
+    top: 71%;
+    left: 35%;
 }
 
 #bus-btn {
-  top: 46%;
-  left: 35%;
+    top: 46%;
+    left: 35%;
 }
 
 #train-btn {
-  top: 71%;
-  left: 35%;
+    top: 20%;
+    left: 35%;
+}
+
+#background {
+    position: relative;
+    display: inline-block;
+}
+
+#background>img:first-child {
+    display: block;
+    width: 1300px;
+    height: auto;
+}
+
+#main-character {
+    position: absolute;
+    left: 50px;
+    bottom: 190px;
+    width: 130px;
+    z-index: 2;
+}
+
+.task-icon {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    animation: float 1.5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.task-icon img {
+    width: 60px;
+    height: auto;
+}
+
+#task1 {
+    bottom: 40px;
+    left: 250px;
+}
+
+#task2 {
+    top: 115px;
+    left: 910px;
+}
+
+#task3 {
+    bottom: 290px;
+    left: 100px;
+}
+
+#task4 {
+    bottom: 210px;    
+    left: 250px;  
 }
