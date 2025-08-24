@@ -308,6 +308,7 @@ body.index-page {
   position: relative;
   width: 100%;
   max-width: 900px;
+   z-index: 1; 
 }
 
 #scenario-bg {
@@ -352,7 +353,7 @@ body.index-page {
   gap: 8px;
   width: 90%;
   max-width: 500px;
-  z-index: 3;
+  z-index: 4;
 }
 
 .choice-btn {
