@@ -16,6 +16,13 @@ body.index-page {
     background-size: cover;
 }
 
+.logo {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 30px auto 0;
+}
+
 #menu {
     position: absolute;
     top: 85%;
@@ -50,7 +57,7 @@ body.index-page {
 }
 
 body.howtopage {
-    background: url('../assets/homebackground.png') no-repeat center center fixed;
+    background-color: #0074C1;
     background-size: cover;
 }
 
@@ -91,11 +98,19 @@ body.howtopage {
     background-color: #fff;
     padding: 30px 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 90%;
     max-width: 280px;
     margin: 90px auto 0 auto;
+}
+
+.at-bot {
+    position: absolute;
+    top: 68%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 120px;
 }
 
 .header h3 {
@@ -103,6 +118,10 @@ body.howtopage {
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+.header p {
+    padding-right: 20px;
 }
 
 .header img {
@@ -124,49 +143,41 @@ body.howtopage {
 .progress-step {
     width: 30px;
     height: 30px;
-    background-color: #555;
+    background-color: #003b62;
     border-radius: 50%;
     text-align: center;
+    font-weight: 700;
     line-height: 30px;
-    color: white;
+    color: #ffffff;
     z-index: 1;
     position: relative;
-}
-
-.progress-step::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 6px;
-    background-color: #0074C1;
-    top: 50%;
-    left: 50%;
-    transform: translateX(50%) translateY(-50%);
-    z-index: -1;
-}
-
-.progress-step.completed {
-    background-color: #0074C1;
-}
-
-.progress-step.current {
-    background-color: #0074C1;
 }
 
 .progress-step:not(:last-child)::after {
     content: '';
     position: absolute;
-    width: calc(100% + 15px);
-    height: 6px;
-    background-color: #ccc;
     top: 50%;
-    left: 50%;
-    transform: translateX(50%) translateY(-50%);
+    left: 100%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 6px;
+    background-color: #003b62;
     z-index: -1;
 }
 
-.progress-step.completed+.progress-step::after {
-    background-color: #0074C1;
+.progress-step.completed {
+    background-color: #fff;
+    color: #0074C1;
+}
+
+.progress-step.current {
+    background-color: #fff;
+    color: #0074C1;
+}
+
+.progress-step.completed:not(:last-child)::after {
+    background-color: #003b62;
+        color: #0074C1;
 }
 
 #character-page {
@@ -251,7 +262,7 @@ body.howtopage {
 }
 
 .thumbnail {
-    border: 3px solid #000765;
+    border: 3px solid #003b62;
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -493,13 +504,13 @@ body.howtopage {
 }
 
 #scenario-box-alt svg {
-  position: absolute;
-  top: -46px;
-  left: 20px;        
-  width: 70px;         
-  height: 70px;
-  color: #FFD700;
-  transform: rotate(90deg);
+    position: absolute;
+    top: -46px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    color: #FFD700;
+    transform: rotate(90deg);
 }
 
 #choices {
