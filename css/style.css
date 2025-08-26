@@ -114,59 +114,59 @@ body.howtopage {
 }
 
 .progress-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-  position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    position: relative;
 }
 
 .progress-step {
-  width: 30px;
-  height: 30px;
-  background-color: #555;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-  z-index: 1;
-  position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    z-index: 1;
+    position: relative;
 }
 
 .progress-step::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  background-color: #0074C1; 
-  top: 50%;
-  left: 50%;
-  transform: translateX(50%) translateY(-50%);
-  z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #0074C1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(50%) translateY(-50%);
+    z-index: -1;
 }
 
 .progress-step.completed {
-  background-color: #0074C1;
+    background-color: #0074C1;
 }
 
 .progress-step.current {
-  background-color: #0074C1;
+    background-color: #0074C1;
 }
 
 .progress-step:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  width: calc(100% + 15px);
-  height: 6px;
-  background-color: #ccc;
-  top: 50%;
-  left: 50%;
-  transform: translateX(50%) translateY(-50%);
-  z-index: -1;
+    content: '';
+    position: absolute;
+    width: calc(100% + 15px);
+    height: 6px;
+    background-color: #ccc;
+    top: 50%;
+    left: 50%;
+    transform: translateX(50%) translateY(-50%);
+    z-index: -1;
 }
 
-.progress-step.completed + .progress-step::after {
-  background-color: #0074C1;
+.progress-step.completed+.progress-step::after {
+    background-color: #0074C1;
 }
 
 #character-page {
@@ -419,10 +419,6 @@ body.howtopage {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 #scene {
@@ -430,6 +426,20 @@ body.howtopage {
     width: 100%;
     max-width: 900px;
     z-index: 1;
+}
+
+#scenario-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding-bottom: 8px;
+    z-index: 3;
 }
 
 #scenario-bg {
@@ -449,26 +459,51 @@ body.howtopage {
 }
 
 #scenario-box {
-    position: absolute;
-    bottom: 180px;
-    left: 50%;
-    transform: translateX(-50%);
     background: #fff;
     border: 4px solid #FFD700;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     border-radius: 12px;
-    width: 80%;
+    width: 82%;
     text-align: center;
     font-size: 0.9rem;
     z-index: 3;
 }
 
-#choices {
+#scenario-box-alt {
     position: absolute;
-    margin-bottom: 20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding-bottom: 8px;
+    z-index: 3;
+    background: #fff;
+    border: 5px solid #FFD700;
+    padding: 10px;
+    border-radius: 12px;
+    width: 82%;
+    text-align: center;
+    font-size: 0.9rem;
+    z-index: 3;
+    bottom: 80px;
+}
+
+#scenario-box-alt svg {
+  position: absolute;
+  top: -46px;
+  left: 20px;        
+  width: 70px;         
+  height: 70px;
+  color: #FFD700;
+  transform: rotate(90deg);
+}
+
+#choices {
+    margin-bottom: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;

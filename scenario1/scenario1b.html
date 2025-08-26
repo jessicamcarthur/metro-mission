@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scenario</title>
     <link rel="stylesheet" href="https://use.typekit.net/lhk3lyb.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <div id="scenario-page">
 
         <div id="scene">
-            <img src="assets/scenario1b.png" alt="Scenario Background" id="scenario-bg">
+            <img src="../assets/scenario1b.png" alt="Scenario Background" id="scenario-bg">
         </div>
 
-        <div id="scenario-box">
-            <p id="scenario-text">
-                You rush to a staff member and point out Tipsy Tony. The staff member runs toward the tracks as a train
-                is arriving.
-            </p>
-        </div>
+        <div id="scenario-overlay">
+            <div id="scenario-box">
+                <p id="scenario-text">
+                    You rush to a staff member and point out Tipsy Tony. The staff member runs toward the tracks as a
+                    train
+                    is arriving.
+                </p>
+            </div>
 
-        <div id="choices">
-            <button class="choice-btn" id="choiceA" onclick="location.href='scenario1ba.html'">A) Run to the tracks
-                yourself to wave down Tipsy Tony</button>
-            <button class="choice-btn" id="choiceB" onclick="location.href='scenario1bb.html'">B) Help the staff member
-                by telling passengers to step back</button>
-            <button class="choice-btn" id="choiceC" onclick="location.href='scenario1bc.html'">C) Call emergency
-                services</button>
+            <div id="choices">
+                <button class="choice-btn" id="choiceA" onclick="location.href='scenario1ba.html'">A) Run to the tracks
+                    yourself to wave down Tipsy Tony</button>
+                <button class="choice-btn" id="choiceB" onclick="location.href='scenario1bb.html'">B) Help the staff
+                    member
+                    by telling passengers to step back</button>
+                <button class="choice-btn" id="choiceC" onclick="location.href='scenario1bc.html'">C) Call emergency
+                    services</button>
+            </div>
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
