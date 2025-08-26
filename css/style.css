@@ -176,7 +176,7 @@ body.howtopage {
 }
 
 .progress-step.completed:not(:last-child)::after {
-    background-color: #003b62;
+    background-color: #fff;
         color: #0074C1;
 }
 
