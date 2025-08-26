@@ -2,7 +2,7 @@ const character = document.getElementById('kiara');
 const container = document.getElementById('scroll-container');
 
 if (character && container) {
-  const SPEED = 1.1;
+  const SPEED = 1;
   const baseLeft = 0;
   let scrollTimeout;
 
