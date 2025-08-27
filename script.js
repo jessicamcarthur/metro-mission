@@ -30,3 +30,23 @@ if (character && container) {
 
   container.addEventListener("scroll", onScroll);
 }
+
+if (localStorage.getItem("score") === null) {
+  localStorage.setItem("score", 0);
+}
+
+function nextPage(url, points) {
+  let currentScore = parseInt(localStorage.getItem("score")) || 0;
+  currentScore += points;
+  localStorage.setItem("score", currentScore);
+  window.location.href = url;
+}
+
+function displayScore() {
+  let score = localStorage.getItem("score") || 0;
+  const scoreBar = document.createElement("div");
+  scoreBar.id = "score-bar";
+  scoreBar.innerText = `Points: ${score}`;
+  document.body.appendChild(scoreBar);
+}
+displayScore();
