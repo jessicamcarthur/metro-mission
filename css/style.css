@@ -428,8 +428,8 @@ body.howtopage {
 
 #score-bar {
   position: fixed;      
-  top: 8px;
-  left: 40px;
+  top: 14px;
+  left: 35px;
   background: #0074C1;
   border: #fff solid 2px;
   color: #fff;
@@ -445,11 +445,12 @@ body.howtopage {
 
 #score-bar .score-icon {
   position: absolute;
-  left: -24px;
-  top: 26%;
+  left: -18px;
+  top: 28%;
   width: 30px;
   height: 30px;
   transform: translateY(-50%);
+  rotate: -15deg;
 }
 
 #scenario-page {

@@ -6,7 +6,7 @@ if (character && container) {
   const baseLeft = 0;
   let scrollTimeout;
 
-  character.pause(); // works only if #kiara is <video> or <audio>
+  character.pause();
 
   function moveCharacter() {
     const scrollX = container.scrollLeft;
@@ -31,19 +31,19 @@ if (character && container) {
   container.addEventListener("scroll", onScroll);
 }
 
-if (localStorage.getItem("score") === null) {
-  localStorage.setItem("score", 0);
+if (sessionStorage.getItem("score") === null) {
+  sessionStorage.setItem("score", 0);
 }
 
 function nextPage(url, points) {
-  let currentScore = parseInt(localStorage.getItem("score")) || 0;
+  let currentScore = parseInt(sessionStorage.getItem("score")) || 0;
   currentScore += points;
-  localStorage.setItem("score", currentScore);
+  sessionStorage.setItem("score", currentScore);
   window.location.href = url;
 }
 
 function displayScore() {
-  let score = localStorage.getItem("score") || 0;
+  let score = sessionStorage.getItem("score") || 0;
   const scoreBar = document.createElement("div");
   scoreBar.id = "score-bar";
   scoreBar.innerHTML = `
@@ -54,4 +54,10 @@ function displayScore() {
   `;
   document.body.appendChild(scoreBar);
 }
-displayScore();
+const pagesWithScore = ["trainstation.html", "traininterior.html", "scenario1.html", "scenario1a.html", "scenario1aa.html", "scenario1ab.html", "scenario1ac.html", "scenario1b.html", "scenario1ba.html", "scenario1bb.html", "scenario1bc.html", "scenario1c.html", "scenario1ca.html", "scenario1cb.html", "scenario1cc.html", "scenario2.html", "scenario2a.html", "scenario2aa.html", "scenario2ab.html", "scenario2ac.html", "scenario2b.html", "scenario2ba.html", "scenario2bb.html", "scenario2bc.html", "scenario2c.html", "scenario2ca.html", "scenario2cb.html", "scenario2cc.html", "scenario3.html", "scenario3a.html", "scenario3aa.html", "scenario3ab.html", "scenario3ac.html", "scenario3b.html", "scenario3ba.html", "scenario3bb.html", "scenario3bc.html", "scenario3c.html", "scenario3ca.html", "scenario3cb.html", "scenario3cc.html"];
+
+const currentPage = window.location.pathname.split("/").pop();
+
+if (pagesWithScore.includes(currentPage)) {
+  displayScore();
+}
