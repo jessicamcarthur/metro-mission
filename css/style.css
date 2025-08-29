@@ -428,13 +428,13 @@ body.howtopage {
 
 #score-bar {
     position: fixed;
-    top: 14px;
+    top: 20px;
     left: 35px;
     background: #0074C1;
     border: #fff solid 2px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 16px 8px 20px;
     border-radius: 26px;
     z-index: 9999;
