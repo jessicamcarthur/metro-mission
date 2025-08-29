@@ -427,30 +427,30 @@ body.howtopage {
 }
 
 #score-bar {
-  position: fixed;      
-  top: 14px;
-  left: 35px;
-  background: #0074C1;
-  border: #fff solid 2px;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  padding: 8px 16px 8px 20px;
-  border-radius: 26px;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
+    position: fixed;
+    top: 14px;
+    left: 35px;
+    background: #0074C1;
+    border: #fff solid 2px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 8px 16px 8px 20px;
+    border-radius: 26px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 }
 
 #score-bar .score-icon {
-  position: absolute;
-  left: -18px;
-  top: 28%;
-  width: 30px;
-  height: 30px;
-  transform: translateY(-50%);
-  rotate: -15deg;
+    position: absolute;
+    left: -18px;
+    top: 28%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    rotate: -15deg;
 }
 
 #scenario-page {
@@ -564,4 +564,35 @@ body.howtopage {
 
 .choice-btn:hover {
     background: #005fa3;
+}
+
+.unlock-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid #ffe202;
+    border-radius: 14px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.unlock-popup-content button {
+    font-family: "gotham-narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: 4px solid #fff;
+    border-radius: 50px;
+    background-color: #0074C1;
+    color: #fff;
+    border: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
