@@ -35,8 +35,9 @@ function saveUnlocked() {
 
 function displayScore() {
   const pagesWithScore = [
-    "scenario1.html", "scenario1a.html", "scenario1b.html", "scenario1c.html",
-    "scenario2.html", "scenario2a.html", "scenario2b.html", "scenario2c.html",
+    "scenario1.html", "scenario1a.html", "scenario1aa.html", "scenario1ab.html", "scenario1ac.html", "scenario1b.html", "scenario1ba.html", "scenario1bb.html", "scenario1bc.html", "scenario1c.html", "scenario1ca.html", "scenario1cb.html", "scenario1cc.html",
+    "scenario2.html", "scenario2a.html", "scenario2aa.html", "scenario2ab.html", "scenario2ac.html", "scenario2b.html", "scenario2ba.html", "scenario2bb.html", "scenario2bc.html", "scenario2c.html", "scenario2ca.html", "scenario2cb.html", "scenario2cc.html",
+    "scenario3.html", "scenario3a.html", "scenario3aa.html", "scenario3ab.html", "scenario3ac.html", "scenario3b.html", "scenario3ba.html", "scenario3bb.html", "scenario3bc.html", "scenario3c.html", "scenario3ca.html", "scenario3cb.html", "scenario3cc.html",
     "trainstation.html", "traininterior.html"
   ];
 

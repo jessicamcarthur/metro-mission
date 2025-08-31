@@ -20,7 +20,7 @@ body.index-page {
     width: 67%;
     height: auto;
     display: block;
-    margin: 30px auto 0;
+    margin: 70px auto 0;
 }
 
 #menu {
@@ -428,7 +428,7 @@ body.howtopage {
 
 #score-bar {
     position: fixed;
-    top: 20px;
+    top: 40px;
     left: 35px;
     background: #0074C1;
     border: #fff solid 2px;
@@ -567,11 +567,12 @@ body.howtopage {
 }
 
 .unlock-popup {
+    color: white;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: #0074C1;
     border: 5px solid #FFD700;
     border-radius: 14px;
     padding: 20px;
@@ -580,17 +581,16 @@ body.howtopage {
     text-align: center;
 }
 
-.unlock-popup-content button {
+.unlock-popup button {
     font-family: "gotham-narrow", sans-serif;
     font-weight: 700;
     font-style: normal;
     padding: 10px 30px;
     font-size: 1rem;
-    border: 4px solid #fff;
+    border: 4px solid white;
     border-radius: 50px;
     background-color: #0074C1;
     color: #fff;
-    border: white;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
