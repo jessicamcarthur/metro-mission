@@ -95,7 +95,9 @@ body.howtopage {
 }
 
 .header {
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #0074C1;
+    font-size: 1.1rem;
     padding: 30px 20px;
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -105,9 +107,25 @@ body.howtopage {
     margin: 90px auto 0 auto;
 }
 
+h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    margin: 60px auto 0 auto;
+}
+
+.howto-image {
+    max-width: 65%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 18px;
+    border: 3px solid #fff;
+}
+
 .at-bot {
     position: absolute;
-    top: 68%;
+    top: 65%;
     right: 10px;
     transform: translateY(-50%);
     width: 120px;
@@ -392,13 +410,13 @@ body.howtopage {
 }
 
 #task3 {
-    bottom: 290px;
-    left: 120px;
+    bottom: 320px;
+    left: 110px;
 }
 
 #task4 {
-    bottom: 220px;
-    left: 260px;
+    bottom: 250px;
+    left: 230px;
 }
 
 #kiara {
