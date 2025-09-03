@@ -125,8 +125,8 @@ h3 {
 
 .at-bot {
     position: absolute;
-    top: 65%;
-    right: 10px;
+    top: 64%;
+    right: 70px;
     transform: translateY(-50%);
     width: 120px;
 }
@@ -159,13 +159,13 @@ h3 {
 }
 
 .progress-step {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: #003b62;
     border-radius: 50%;
     text-align: center;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 40px;
     color: #ffffff;
     z-index: 1;
     position: relative;
@@ -177,8 +177,8 @@ h3 {
     top: 50%;
     left: 100%;
     transform: translateY(-50%);
-    width: 100%;
-    height: 6px;
+    width: 200%;
+    height: 8px;
     background-color: #003b62;
     z-index: -1;
 }
@@ -322,13 +322,13 @@ h3 {
 
 #levels-img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .level-btn {
     position: absolute;
-    width: 210px;
+    width: 280px;
     height: 70px;
     border-radius: 50%;
     border: 2px solid #00000000;
@@ -338,17 +338,17 @@ h3 {
 
 #ferry-btn {
     top: 71%;
-    left: 35%;
+    left: 37%;
 }
 
 #bus-btn {
     top: 46%;
-    left: 35%;
+    left: 37%;
 }
 
 #train-btn {
     top: 20%;
-    left: 35%;
+    left: 37%;
 }
 
 #scroll-container {
@@ -410,13 +410,13 @@ h3 {
 }
 
 #task3 {
-    bottom: 320px;
-    left: 110px;
+    bottom: 230px;
+    left: 160px;
 }
 
 #task4 {
-    bottom: 250px;
-    left: 230px;
+    bottom: 140px;
+    left: 290px;
 }
 
 #kiara {
@@ -429,7 +429,7 @@ h3 {
 }
 
 .traininterior-bg {
-    width: 120%;
+    width: 100%;
     height: auto;
     position: absolute;
     z-index: 0;
@@ -517,9 +517,9 @@ h3 {
 #scenario-box {
     background: #fff;
     border: 4px solid #FFD700;
-    padding: 6px;
+    padding: 10px;
     border-radius: 12px;
-    width: 82%;
+    width: 85%;
     text-align: center;
     font-size: 0.9rem;
     z-index: 3;
