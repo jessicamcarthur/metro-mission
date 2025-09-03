@@ -322,7 +322,7 @@ h3 {
 
 #levels-img {
     display: block;
-    width: 120%;
+    width: 100%;
     height: auto;
 }
 
@@ -410,13 +410,13 @@ h3 {
 }
 
 #task3 {
-    bottom: 310px;
-    left: 120px;
+    bottom: 210px;
+    left: 160px;
 }
 
 #task4 {
-    bottom: 220px;
-    left: 240px;
+    bottom: 140px;
+    left: 300px;
 }
 
 #kiara {
@@ -429,7 +429,7 @@ h3 {
 }
 
 .traininterior-bg {
-    width: 110%;
+    width: 100%;
     height: auto;
     position: absolute;
     z-index: 0;
