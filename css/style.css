@@ -115,7 +115,7 @@ h3 {
 }
 
 .howto-image {
-    max-width: 65%;
+    max-width: 45%;
     height: auto;
     display: block;
     margin: 20px auto;
@@ -125,8 +125,8 @@ h3 {
 
 .at-bot {
     position: absolute;
-    top: 64%;
-    right: 70px;
+    top: 66%;
+    right: 10px;
     transform: translateY(-50%);
     width: 120px;
 }
@@ -322,7 +322,7 @@ h3 {
 
 #levels-img {
     display: block;
-    width: 100%;
+    width: 120%;
     height: auto;
 }
 
@@ -410,13 +410,13 @@ h3 {
 }
 
 #task3 {
-    bottom: 230px;
-    left: 160px;
+    bottom: 310px;
+    left: 120px;
 }
 
 #task4 {
-    bottom: 140px;
-    left: 290px;
+    bottom: 220px;
+    left: 240px;
 }
 
 #kiara {
@@ -429,7 +429,7 @@ h3 {
 }
 
 .traininterior-bg {
-    width: 100%;
+    width: 110%;
     height: auto;
     position: absolute;
     z-index: 0;
@@ -479,7 +479,7 @@ h3 {
 
 #scene {
     position: relative;
-    width: 100%;
+    width: 80%;
     max-width: 900px;
     z-index: 1;
 }
@@ -500,7 +500,7 @@ h3 {
 
 #scenario-bg {
     display: block;
-    width: 100%;
+    width: 128%;
     height: auto;
     margin: 0 auto;
     z-index: 1;
