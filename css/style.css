@@ -94,6 +94,50 @@ body.howtopage {
     transform: translate(0, 0) scale(1.05);
 }
 
+.button-info {
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    font-family: "gotham-narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    background-color: #0074C1;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border: none;
+    pointer-events: none;
+}
+
+.button-back {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* width: 85%; */
+    max-width: 500px;
+    z-index: 1;
+    top: 40px;
+    right: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-radius: 26px;
+    font-weight: bold;
+    padding: 8px 16px 8px 20px;
+    border: #fff solid 2px;
+    border-radius: 26px;
+    background-color: #0074C1;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
 .header {
     background-color: #ffffff;
     color: #0074C1;
